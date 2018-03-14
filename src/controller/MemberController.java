@@ -32,9 +32,7 @@ public class MemberController {
     }
 
      public List<Entry> allEntries() {
-        
-    	
-        List<Entry> allE= new ArrayList<>();
+        List<Entry> allE = new ArrayList<Entry>();
         allE = this.mr.getAllEntries();
         return allE;
     }

@@ -72,7 +72,6 @@ public class MemberRepository {
 		 entries.add(e);		 	 
 	 }
 	 public List<Entry> getAllEntries(){
-		 
 		 return entries;
 	 }
 }
