@@ -1,8 +1,7 @@
-package repository;
-
 import junit.framework.TestCase;
 import model.Entry;
 import model.Member;
+import repository.MemberRepository;
 
 public class MemberRepositoryTest extends TestCase {
   public void testAddMember() throws Exception {
