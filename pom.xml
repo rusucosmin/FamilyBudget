@@ -9,10 +9,12 @@
 
   <name>Rcie2005FamilyBudget</name>
   <url>http://maven.apache.org</url>
+  <build>
+    <testSourceDirectory>test/java</testSourceDirectory>
+  </build>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.build.testSourceDirectory>${project.basedir}/test</project.build.testSourceDirectory>
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
