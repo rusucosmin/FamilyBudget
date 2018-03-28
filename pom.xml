@@ -10,7 +10,7 @@
   <name>Rcie2005FamilyBudget</name>
   <url>http://maven.apache.org</url>
   <build>
-    <testSourceDirectory>test/java</testSourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
   </build>
 
   <properties>
