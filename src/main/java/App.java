@@ -6,7 +6,7 @@ import ui.MemberUI;;
 public class App {
 	public static void main(String[] args) {
 		
-			MemberRepository repo = new MemberRepository();
+			MemberRepository repo = new MemberRepository("membersF.txt", "budgetF.txt");
 		
 			MemberController ctrl = new MemberController(repo);
 		

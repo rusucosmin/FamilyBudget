@@ -27,7 +27,7 @@ public class MemberRepository {
 	private final static String filenameBudget = "budgetF.txt";
 
 	@SuppressWarnings("resource")
-	public MemberRepository() {
+	public MemberRepository(String filenameMember, String filenameBudget) {
 		
 	try{
 		FileReader fileReader = null;
@@ -36,7 +36,7 @@ public class MemberRepository {
 
 		fileReader = new FileReader(filenameMember);
 		bufferedReader = new BufferedReader(fileReader);
-		
+
 		while ((currentLine = bufferedReader.readLine()) != null) {
 			String line[] = currentLine.split(";");
 			Member m = new Member(line[0], line[1]);
@@ -50,7 +50,7 @@ public class MemberRepository {
 		BufferedReader bufferedReaderEntry = null;
 		String currentLineEntry = null;
 
-		fileReaderEntry = new FileReader(filenameMember);
+		fileReaderEntry = new FileReader(filenameBudget);
 		bufferedReaderEntry = new BufferedReader(fileReaderEntry);
 		
 		while ((currentLineEntry = bufferedReaderEntry.readLine()) != null) {
