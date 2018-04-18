@@ -1,3 +1,3 @@
-salary;10;1
-salary;100;2
-salary;100;3
+income;10;1
+income;100;2
+income;2000;3

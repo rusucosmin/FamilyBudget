@@ -4,14 +4,21 @@ import model.Member;
 import repository.MemberRepository;
 
 public class MemberRepositoryTest extends TestCase {
-  public void testAddMember() throws Exception {
+  public void testAddEntry() throws Exception {
     MemberRepository mr = new MemberRepository("", "");
     mr.addEntry(new Entry("type", 10, 1));
     mr.addEntry(new Entry("type", 20, 1));
     assertEquals(mr.getAllEntries().size(), 2);
   }
 
-  public void testAddEntry() throws Exception {
+  public void testAddMember2() throws Exception {
+    MemberRepository mr = new MemberRepository("", "");
+    mr.addEntry(new Entry("type", 10, 1));
+    mr.addEntry(new Entry("type", 20, 1));
+    assertEquals(mr.getAllEntries().size(), 2);
+  }
+
+  public void testAddMember() throws Exception {
     MemberRepository mr = new MemberRepository("", "");
     mr.addMember(new Member("cosmin", "1"));
     mr.addMember(new Member("raluca", "2"));

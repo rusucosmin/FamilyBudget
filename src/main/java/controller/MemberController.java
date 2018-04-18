@@ -31,9 +31,28 @@ public class MemberController {
         mr.addEntry(oneEntry);    	
     }
 
-     public List<Entry> allEntries() {
+    public List<Entry> allEntries() {
         List<Entry> allE = new ArrayList<Entry>();
         allE = this.mr.getAllEntries();
         return allE;
     }
-} 
+
+    public int getNumberOfExpensiveEntries() {
+      int cnt = 0;
+      for(Entry e : this.mr.getAllEntries()) {
+        if(e.getValue() >= 2000) {
+          ++ cnt;
+        }
+      }
+      return cnt;
+    }
+
+    public boolean hasMinimumEconomySalary() {
+      for(Entry e: this.mr.getAllEntries()) {
+          if(e.getType().equals("income") && e.getValue() >= 2000) {
+              return true;
+          }
+      }
+      return false;
+    }
+}
