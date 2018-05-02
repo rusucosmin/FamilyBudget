@@ -74,4 +74,5 @@ public class MemberRepository {
 	 public List<Entry> getAllEntries(){
 		 return entries;
 	 }
+	 public List<Member> getAllMembers() { return members; }
 }
